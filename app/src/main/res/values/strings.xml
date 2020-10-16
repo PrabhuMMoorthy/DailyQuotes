@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">DailyQuotes</string>
     <string name="daily_quotes">Daily Quotes</string>
+    <string name="quote_1">Daily Quotes 0001</string>
+    <string name="quote_2">Daily Quotes 0002</string>
+    <string name="quote_3">Daily Quotes 0003</string>
+    <string name="quote_4">Daily Quotes 0004</string>
+    <string name="quote_5">Daily Quotes 0005</string>
+    <string name="quote_6">Daily Quotes 0006</string>
+    <string name="quote_7">Daily Quotes 0007</string>
+    <string name="quote_8">Daily Quotes 0008</string>
+    <string name="quote_9">Daily Quotes 0009</string>
+    <string name="quote_10">Daily Quotes 0010</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Style</string>
+    <string name="notification_header">Notification</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="theme_title">Theme</string>
+
+    <!-- Sync Preferences -->
+    <string name="notification_title">Enable daily notification</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
