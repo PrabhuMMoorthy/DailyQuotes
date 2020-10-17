@@ -1,11 +1,13 @@
 package com.open.quotes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.preference.PreferenceManager;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton share;
     private FloatingActionButton markFavorite;
     private FloatingActionButton settings;
+
+    private ConstraintLayout mainLayout;
 
     QuotesService quotesService = new QuotesService();
 
@@ -35,16 +39,14 @@ public class MainActivity extends AppCompatActivity {
         markFavorite = findViewById(R.id.markFavorite);
         settings = findViewById(R.id.settings);
 
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String theme = preferences.getString("theme", "light");
-        boolean enableNotifications = preferences.getBoolean("enableNotifications", true);
+        mainLayout = findViewById(R.id.mainLayout);
 
-        quoteview.setText("Hello World ~ By Prabhu");
+        quoteview.setText(quotesService.getRandomQuote());
 
         reload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                quoteview.setText("Quote "+quotesService.getRandomQuote()+" ~ By Prabhu");
+                quoteview.setText(quotesService.getRandomQuote());
             }
         });
 
@@ -83,4 +85,22 @@ public class MainActivity extends AppCompatActivity {
         //dbHandler.loadInitialData();
         //dbHandler.getData();
     }
+
+    private void loadSettings(){
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String theme = preferences.getString("theme", "light");
+        if(theme.equals("light")){
+            mainLayout.setBackgroundColor(Color.CYAN);
+        }else{
+            mainLayout.setBackgroundColor(Color.BLACK);
+        }
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        loadSettings();
+    }
+
+
 }

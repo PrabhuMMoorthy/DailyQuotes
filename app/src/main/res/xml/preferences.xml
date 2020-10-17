@@ -8,16 +8,16 @@
             android:entries="@array/theme_entries"
             android:entryValues="@array/theme_values"
             android:key="theme"
-            android:title="Theme" />
+            android:title="@string/theme" />
         <ListPreference
             android:defaultValue="1"
             android:entries="@array/orientation_entries"
             android:entryValues="@array/orientation_values"
             android:key="screenOrientation"
-            android:title="Screen Orientation" />
+            android:title="@string/screenOrientation" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="enableNotifications"
-            android:title="Enable Daily Notifications" />
+            android:title="@string/enableNotifications" />
     </PreferenceCategory>
 </PreferenceScreen>

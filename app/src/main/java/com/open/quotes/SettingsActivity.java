@@ -16,10 +16,4 @@ public class SettingsActivity extends PreferenceActivity {
         addPreferencesFromResource(R.xml.preferences);
     }
 
-    private void loadSettings(){
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-
-    }
-
-
 }
