@@ -10,21 +10,20 @@
 
     <ImageView
         android:id="@+id/centerImage"
-        android:layout_width="385dp"
-        android:layout_height="610dp"
+        android:layout_width="285dp"
+        android:layout_height="263dp"
         android:tint="#B0FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.876"
+        app:layout_constraintVertical_bias="0.74"
         app:srcCompat="@drawable/ic_buddha_face" />
 
     <TextView
         android:id="@+id/quoteView"
-        android:layout_width="350dp"
-        android:layout_height="458dp"
+        android:layout_width="731dp"
+        android:layout_height="224dp"
         android:backgroundTint="@color/black"
         android:fontFamily="sans-serif-light"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -35,12 +34,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.576" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="94dp"
+        android:layout_width="784dp"
+        android:layout_height="67dp"
         android:background="@color/purple_200"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -65,8 +64,8 @@
         android:id="@+id/reload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,12 +76,12 @@
         android:id="@+id/share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_share" />
 
@@ -90,8 +89,8 @@
         android:id="@+id/markFavorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="92dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

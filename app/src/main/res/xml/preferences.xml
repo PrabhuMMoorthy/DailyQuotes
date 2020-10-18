@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory android:title="Favorites">
+        <Preference
+            android:title="Favorite Quotes"
+            android:key="favorites">
+        </Preference>
+
+    </PreferenceCategory>
     <PreferenceCategory android:title="Colors">
 
         <ListPreference
@@ -15,6 +22,10 @@
             android:entryValues="@array/orientation_values"
             android:key="screenOrientation"
             android:title="@string/screenOrientation" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notifications">
+
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="enableNotifications"

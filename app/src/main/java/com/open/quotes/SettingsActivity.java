@@ -1,6 +1,7 @@
 package com.open.quotes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 
 import android.content.SharedPreferences;
